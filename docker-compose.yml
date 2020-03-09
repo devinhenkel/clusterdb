@@ -1,7 +1,7 @@
 version: '3'
 services:
   mongodb:
-    image: 'mongo:latest'
+    image: 'rakhnin/mongo-arm64'
     ports:
       - 27017:27017
   graphql-server:
@@ -12,4 +12,4 @@ services:
     depends_on:
       - mongodb
     environment:
-      - mongoURI=mongodb://mongodb:27017/graphql-development
+      - mongoURI=mongodb://192.168.1.81:27017/clusterdb
