@@ -1,9 +1,10 @@
 export default `
   type User {
-    _id: String!
-    name: String!
+    _id: ID!
+    username: String!
+    firstname: String
+    lastname: String
     email: String!
-    age: Int!
     posts: [Post!]!
     comments: [Comment!]!
   }
@@ -15,19 +16,21 @@ export default `
 
   type Mutation {
     createUser(user: CreateUserInput): User!
-    updateUser(_id: String!, user: UpdateUserInput!): User!
-    deleteUser(_id: String!): User!
+    updateUser(_id: ID!, user: UpdateUserInput!): User!
+    deleteUser(_id: ID!): User!
   }
 
   input CreateUserInput {
-    name: String!
+    username: String!
+    firstname: String
+    lastname: String
     email: String!
-    age: Int!
   }
   
   input UpdateUserInput {
-    name: String
+    username: String
+    firstname: String
+    lastname: String
     email: String
-    age: Int
   } 
 `;

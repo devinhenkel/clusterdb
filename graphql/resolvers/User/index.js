@@ -14,9 +14,10 @@ export default {
 
       return users.map(u => ({
         _id: u._id.toString(),
-        name: u.name,
+        username: u.username,
+        firstname: u. firstname,
+        lastname: u.lastname,
         email: u.email,
-        age: u.age,
         posts: u.posts,
         comments: u.comments
       }));
@@ -25,7 +26,7 @@ export default {
   Mutation: {
     createUser: async (parent, { user }, context, info) => {
       const newUser = await new User({
-        name: user.name,
+        username: user.username,
         email: user.email,
         age: user.age
       });
