@@ -6,6 +6,7 @@ export default `
     lastname: String
     email: String!
     posts: [Post!]!
+    projects: [Project!]!
     comments: [Comment!]!
   }
 

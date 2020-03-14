@@ -21,4 +21,15 @@ const transformPost = event => {
     }
 }
 
+
+
+const transformProject = event => {
+    return {
+        ...event._doc,
+        _id: event.id,
+        creator: user.bind(this, event.creator)
+    }
+}
+
 exports.transformPost = transformPost;
+exports.transformProject = transformProject;

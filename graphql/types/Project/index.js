@@ -1,9 +1,9 @@
 export default `
 type Project {
-    _id: ID! @unique @id
+    _id: ID!
     title: String!
     description: String
-    team: [User]!
+    owner: User!
 }
 
 type Query {
@@ -20,12 +20,13 @@ type Mutation {
 input CreateProjectInput {
     title: String!
     description: String
+    owner: ID!
 }
 
 input UpdateProjectInput {
     title: String
     description: String
-    team: [User]
+    owner: ID
 }
 `;
 

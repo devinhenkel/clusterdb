@@ -1,5 +1,6 @@
 import User from "../../../server/models/User";
 import Post from "../../../server/models/Post";
+import Project from "../../../server/models/Project";
 import Comment from "../../../server/models/Comment";
 
 export default {
@@ -57,6 +58,9 @@ export default {
   User: {
     posts: async ({ _id }, args, context, info) => {
       return await Post.find({ author: _id });
+    },
+    projects: async ({ _id }, args, context, info) => {
+      return await Project.find({ owner: _id });
     },
     comments: async ({ _id }, args, context, info) => {
       return await Comment.find({ author: _id });
