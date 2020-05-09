@@ -12,4 +12,4 @@ services:
     depends_on:
       - mongodb
     environment:
-      - mongoURI=mongodb://192.168.1.81:27017/clusterdb
+      - mongoURI=mongodb://192.168.1.81:27017/testdb
