@@ -5,6 +5,7 @@ export default `
     hardware: String!
     sensor: [String]
     actuator: [String]
+    location: String
     activated: Boolean
   }
 

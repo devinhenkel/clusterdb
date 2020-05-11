@@ -28,6 +28,7 @@ export default {
         hardware: device.hardware,
         sensor: device.sensor,
         actuator: device.actuator,
+        location: device.location,
         activated: false
       });
 
