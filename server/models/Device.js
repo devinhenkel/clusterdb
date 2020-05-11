@@ -28,6 +28,10 @@ const DeviceSchema = new Schema({
       required: false
     }
   ],
+  location: {
+    type: String,
+    required: false
+  },
   activated: {
     type: Boolean,
     required: false

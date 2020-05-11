@@ -25,12 +25,14 @@ export default `
     hardware: String
     sensor: [String!]
     actuator: [String!]
+    location: String
   }
   
   input UpdateDeviceInput {
     hardware: String
     sensor: [String!]
     actuator: [String!]
+    location: String
   }
 
   enum MutationType {
