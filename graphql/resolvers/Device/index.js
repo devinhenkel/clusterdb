@@ -16,6 +16,7 @@ export default {
         hardware: u.hardware,
         sensor: u.sensor,
         actuator: u.actuator,
+        location: u.location,
         activated: u.activated
       }));
     }
