@@ -26,6 +26,7 @@ mongoose
   .connect(
     db,
     {
+      poolSize: 10,
       useCreateIndex: true,
       useNewUrlParser: true
     }
