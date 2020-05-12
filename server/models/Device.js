@@ -10,7 +10,8 @@ ObjectID.prototype.valueOf = function() {
 const DeviceSchema = new Schema({
   uuid: {
     type: String,
-    required: true
+    required: true,
+    unique: true
   },
   hardware: {
     type: String,
