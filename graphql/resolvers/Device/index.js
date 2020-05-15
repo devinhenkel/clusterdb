@@ -42,7 +42,8 @@ export default {
       return new Promise((resolve, reject) => {
         Device.findByIdAndUpdate(
           _id,
-          { $set: { ...{activated: activate} } }
+          { $set: { ...{activated: activate} } },
+          { new: true }
         ).exec((err, res) => {
           err ? reject(err) : resolve(res);
         });
