@@ -17,7 +17,8 @@ export default {
         sensor: u.sensor,
         actuator: u.actuator,
         location: u.location,
-        activated: u.activated
+        activated: u.activated,
+        known: u.known
       }));
     }
   },
@@ -29,7 +30,8 @@ export default {
         sensor: device.sensor,
         actuator: device.actuator,
         location: device.location,
-        activated: false
+        activated: false,
+        known: false
       });
 
       return new Promise((resolve, reject) => {
@@ -42,7 +44,7 @@ export default {
       return new Promise((resolve, reject) => {
         Device.findByIdAndUpdate(
           _id,
-          { $set: { ...{activated: activate} } },
+          { $set: { ...{activated: activate, known: true} } },
           { new: true }
         ).exec((err, res) => {
           err ? reject(err) : resolve(res);

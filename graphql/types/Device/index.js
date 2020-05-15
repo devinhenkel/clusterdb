@@ -7,6 +7,7 @@ export default `
     actuator: [String]
     location: String
     activated: Boolean
+    known: Boolean
   }
 
   type Query {
@@ -34,6 +35,7 @@ export default `
     sensor: [String!]
     actuator: [String!]
     location: String
+    known: Boolean
   }
 
   enum MutationType {

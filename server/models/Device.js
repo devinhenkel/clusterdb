@@ -36,6 +36,10 @@ const DeviceSchema = new Schema({
   activated: {
     type: Boolean,
     required: false
+  },
+  known: {
+    type: Boolean,
+    required: false
   }
 });
 
