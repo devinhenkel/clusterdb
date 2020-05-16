@@ -6,7 +6,8 @@ export default {
       return await Device.find({ _id });
     },
     devices: async (parent, args, context, info) => {
-      const res = await Device.find({})
+      let filter = args.where ? args.where : ''
+      const res = await Device.find({filter})
         .populate()
         .exec();
 

@@ -12,7 +12,7 @@ export default `
 
   type Query {
     device(_id: ID!): [Device!]!
-    devices: [Device!]!
+    devices(where: DeviceWhereInput): [Device!]!
   }
 
   type Mutation {
@@ -35,6 +35,14 @@ export default `
     sensor: [String!]
     actuator: [String!]
     location: String
+    known: Boolean
+  }
+
+  input DeviceWhereInput {
+    hardware: String
+    sensor: [String!]
+    actuator: [String!]
+    activated: Boolean
     known: Boolean
   }
 
