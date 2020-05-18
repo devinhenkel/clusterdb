@@ -5,6 +5,7 @@ export default `
     hardware: String!
     sensor: [String]
     actuator: [String]
+    name: String
     location: String
     activated: Boolean
     known: Boolean
@@ -27,6 +28,7 @@ export default `
     hardware: String
     sensor: [String!]
     actuator: [String!]
+    name: String
     location: String
   }
   
@@ -34,6 +36,7 @@ export default `
     hardware: String
     sensor: [String!]
     actuator: [String!]
+    name: String
     location: String
     known: Boolean
   }
@@ -43,7 +46,13 @@ export default `
     sensor: [String!]
     actuator: [String!]
     activated: Boolean
+    name: String
     known: Boolean
+  }
+
+  input DeviceUniqueInput {
+    _id: ID
+    uuid: String
   }
 
   enum MutationType {

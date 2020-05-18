@@ -5,7 +5,8 @@
             "includePath": [
                 "/home/devinhenkel/.arduino15/packages/esp8266/tools/**",
                 "/home/devinhenkel/.arduino15/packages/esp8266/hardware/esp8266/2.6.3/**",
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/home/devinhenkel/.arduino15/packages/esp8266/hardware/esp8266/2.7.1/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

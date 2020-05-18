@@ -29,6 +29,10 @@ const DeviceSchema = new Schema({
       required: false
     }
   ],
+  name: {
+    type: String,
+    required: false
+  },
   location: {
     type: String,
     required: false

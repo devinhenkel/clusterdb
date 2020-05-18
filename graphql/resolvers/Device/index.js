@@ -17,6 +17,7 @@ export default {
         hardware: u.hardware,
         sensor: u.sensor,
         actuator: u.actuator,
+        name: u.name,
         location: u.location,
         activated: u.activated,
         known: u.known
@@ -30,6 +31,7 @@ export default {
         hardware: device.hardware,
         sensor: device.sensor,
         actuator: device.actuator,
+        name: device.name,
         location: device.location,
         activated: false,
         known: false
