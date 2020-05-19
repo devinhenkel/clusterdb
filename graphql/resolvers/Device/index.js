@@ -75,8 +75,8 @@ export default {
     }
   },
   Device: {
-    location: async ({ location }, args, context, info) => {
-      return await Location.findById({ location });
+    location: async ({ _id }, args, context, info) => {
+      return await Location.findById(_id);
     }
   }
 };
