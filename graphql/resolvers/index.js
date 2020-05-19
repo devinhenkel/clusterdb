@@ -5,7 +5,8 @@ import Post from "./Post/";
 import Project from "./Project/";
 import Comment from "./Comment/";
 import Device from "./Device/";
+import Location from "./Location/";
 
-const resolvers = [User, Post, Project, Comment, Device];
+const resolvers = [User, Post, Project, Comment, Device, Location];
 
 export default mergeResolvers(resolvers);

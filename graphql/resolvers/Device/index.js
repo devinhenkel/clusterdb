@@ -1,4 +1,5 @@
 import Device from "../../../server/models/Device";
+import Location from "../../../server/models/Location";
 
 export default {
   Query: {
@@ -74,5 +75,8 @@ export default {
     }
   },
   Device: {
+    location: async ({ location }, args, context, info) => {
+      return await Location.findById({ _id: location });
+    }
   }
 };

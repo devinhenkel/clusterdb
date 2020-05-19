@@ -6,7 +6,7 @@ export default `
     sensor: [String]
     actuator: [String]
     name: String
-    location: String
+    location: Location
     activated: Boolean
     known: Boolean
   }
@@ -29,7 +29,7 @@ export default `
     sensor: [String!]
     actuator: [String!]
     name: String
-    location: String
+    location: ID
   }
   
   input UpdateDeviceInput {
@@ -37,7 +37,7 @@ export default `
     sensor: [String!]
     actuator: [String!]
     name: String
-    location: String
+    location: ID
     known: Boolean
   }
 

@@ -5,8 +5,9 @@ import Post from "./Post/";
 import Project from "./Project/";
 import Comment from "./Comment/";
 import Device from "./Device/";
+import Location from "./Location/";
 
-const typeDefs = [User, Post, Project, Comment, Device];
+const typeDefs = [User, Post, Project, Comment, Device, Location];
 
 // NOTE: 2nd param is optional, and defaults to false
 // Only use if you have defined the same type multiple times in
