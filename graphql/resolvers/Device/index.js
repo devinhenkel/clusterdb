@@ -33,7 +33,7 @@ export default {
         sensor: device.sensor,
         actuator: device.actuator,
         name: device.name,
-        location: 5ec47ae3aa2239244c26f7c7,
+        location: {_id:"5ec47ae3aa2239244c26f7c7"},
         activated: false,
         known: false
       });
