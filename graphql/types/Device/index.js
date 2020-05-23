@@ -42,6 +42,7 @@ export default `
   }
 
   input DeviceWhereInput {
+    uuid: ID
     hardware: String
     sensor: [String!]
     actuator: [String!]
